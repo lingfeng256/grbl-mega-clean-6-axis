@@ -20,6 +20,7 @@
 */
 
 #include "stepper.h"
+#include <stdbool.h>
 #include "grbl.h"
 #include "config.h"
 #include "cpu_map.h"
