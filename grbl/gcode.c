@@ -1059,7 +1059,7 @@ uint8_t gc_execute_line(char *line)
         bit_false(value_words, (bit(WORD_N) | bit(WORD_F) | bit(WORD_S) | bit(WORD_T))); // Remove single-meaning value words.
 
     if (axis_command)
-        bit_false(value_words, (bit(WORD_X) | bit(WORD_Y) | bit(WORD_Z))); // Remove axis words.
+        bit_false(value_words, (bit(WORD_X) | bit(WORD_Y) | bit(WORD_Z) | bit(WORD_A) | bit(WORD_B) | bit(WORD_C))); // Remove axis words.
     if (value_words)
         FAIL(STATUS_GCODE_UNUSED_WORDS); // [Unused words]
 
